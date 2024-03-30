@@ -21,14 +21,12 @@ router.post('/login', async (req, res) => {
       where: { username: req.body.username },
     })
 
-    console.log('userData:', userData) // Add this line to check the userData
-
     if (!userData) {
       res.status(400).json({ message: 'Incorrect username or password' })
       return
     }
 
-    let validPassword // Define validPassword variable here
+    let validPassword
 
     try {
       validPassword = await userData.checkPassword(req.body.password)
@@ -37,8 +35,6 @@ router.post('/login', async (req, res) => {
       res.status(400).json({ message: 'Error checking password' })
       return
     }
-
-    console.log('validPassword:', validPassword) // Add this line to check the validPassword
 
     if (!validPassword) {
       res.status(400).json({ message: 'Incorrect username or password' })
@@ -52,7 +48,7 @@ router.post('/login', async (req, res) => {
       res.status(200).json({ userData, message: 'Login successful' })
     })
   } catch (error) {
-    console.error('Error in login route:', error) // Add this line to log any errors
+    console.error('Error in login route:', error)
     res.status(400).json({ error: error.message })
   }
 })

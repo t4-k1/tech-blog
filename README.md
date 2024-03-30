@@ -4,7 +4,7 @@
 
 Tech Blog is a CMS-style blog site where developers can publish articles and blog posts. The application follows the Model-View-Controller (MVC) architectural pattern, utilizing Handlebars.js as the templating engine, Sequelize as the ORM (Object-Relational Mapping) tool for MySQL database interaction, and the express-session npm package for user authentication.
 
-You can view the blog here: [Tech Blog](LINK)
+You can view the blog here: [Tech Blog](https://afternoon-beach-79870-ec068aa8bcc2.herokuapp.com/)
 
 ## Table of Contents
 
