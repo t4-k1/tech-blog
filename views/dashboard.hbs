@@ -1,0 +1,7 @@
+<div class=''>
+  {{#each posts}}
+    <a class='list-item' href='/dashboard/edit/{{id}}'>
+      <span>{{title}} - {{formatDate createdAt}}</span>
+    </a>
+  {{/each}}
+</div>

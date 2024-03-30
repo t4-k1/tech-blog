@@ -1,0 +1,181 @@
+body {
+  background-color: #aed9e0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  line-height: 1.6;
+  font-size: 18px;
+  padding-top: 1px; /* Adjust the value based on your navbar height */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin: 0;
+  color: #000;
+  line-height: 1.4;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+header {
+  background-color: #5eaaa8;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  margin: 20px auto;
+  width: 90%;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #000;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e84a5f;
+  border-radius: 0.5rem;
+  background-color: #aed9e0;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.btn {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #e84a5f;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #cc2366;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  background-color: #364156;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.nav-item {
+  margin: 0 20px;
+}
+
+.hero {
+  padding: 3rem;
+  background-color: #5eaaa8;
+  color: #000;
+  text-align: center;
+  margin-top: 40px; /* Adjust the value based on your desired spacing */
+}
+
+.hero p {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.app-title {
+  font-size: 3rem;
+  background-color: #e84a5f;
+  color: #000;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 0.5rem;
+  box-shadow: 6px 5px #cc2366;
+}
+
+.list-item {
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 0.5rem;
+  background-color: #e84a5f;
+  color: #000;
+  text-decoration: none;
+}
+
+.list-item:hover {
+  background-color: #cc2366;
+  color: #fff;
+}
+
+.footer {
+  padding: 20px;
+  color: #000;
+}
+
+.card {
+  margin: 0 0 30px 0;
+  border: 3px solid #e84a5f;
+  border-radius: 0.5rem;
+}
+
+.card-header {
+  color: #000;
+  background-color: #e84a5f;
+  padding: 1.5rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.form-label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 1.1rem;
+  border: 2px solid #e84a5f;
+  border-radius: 0.5rem;
+  color: #000;
+}
+
+@media screen and (min-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 calc(100% * 1 / 2 - 20px);
+    margin: 10px;
+  }
+}
